@@ -4,8 +4,8 @@
   "description": "This is a Workshop about Cypress",
   "main": "index.js",
   "scripts": {
-    "test:open": "npx cypress open",
-    "test:run": "npx cypress run"
+    "test:open": "cypress open",
+    "test:run": "cypress run"
   },
   "repository": {
     "type": "git",
@@ -25,22 +25,8 @@
   "homepage": "https://github.com/JorgeVQA/cypress-training#readme",
   "devDependencies": {
     "@types/jest": "^27.4.1",
+    "@types/mocha": "^9.1.1",
+    "cypress": "^9.6.0",
     "typescript": "^4.6.3"
-  },
-    "compilerOptions": {
-        "target": "es5",
-        "skipLibCheck": true,
-        "strict": true,
-        "lib": ["es5", "dom"],
-        "types": [
-            "cypress",
-            "node"
-        ]
-    },
-    "include": [
-        "cypress/**/*.ts"
-    , "src"],
-    "exclude": [
-        "node_modules/"
-    ]
+  }
 }
