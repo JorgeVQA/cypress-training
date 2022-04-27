@@ -4,7 +4,9 @@
   "description": "This is a Workshop about Cypress",
   "main": "index.js",
   "scripts": {
-    "test:open": "cypress open",
+    "test:open": "npm run lint && cypress open",
+    "lint": "eslint ./cypress/integration/**/*.ts",
+    "lint:fix": "npm run lint -- --fix",
     "test:run": "cypress run"
   },
   "repository": {
@@ -26,7 +28,12 @@
   "devDependencies": {
     "@types/jest": "^27.4.1",
     "@types/mocha": "^9.1.1",
+    "@typescript-eslint/eslint-plugin": "^5.21.0",
+    "@typescript-eslint/parser": "^5.21.0",
     "cypress": "^9.6.0",
+    "eslint": "^8.14.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-cypress": "^2.12.1",
     "typescript": "^4.6.3"
   }
 }
