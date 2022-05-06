@@ -6,7 +6,7 @@ class LoginPage {
   constructor() {
     this.loginEmailInput = "#email";
     this.loginPasswordInput = "#passwd";
-    this.proceedToCheckoutBtnSignIn = "button#SubmitLogin > span";
+    this.proceedToCheckoutBtnSignIn = "#SubmitLogin";
   }
   
   public enterCredentialsInLoginAndSignIn(emailin: string, passwordin: string): void {

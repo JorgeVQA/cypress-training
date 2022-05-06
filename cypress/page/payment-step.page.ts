@@ -4,9 +4,9 @@ class PaymentStepPage {
   private orderConfirmationMessage: string
   
   constructor() {
-    this.paymentMethod = "div#HOOK_PAYMENT div:nth-child(1) > div > p > a";
-    this.confirmOrderBtnPayment = "p#cart_navigation span";
-    this.orderConfirmationMessage = "#center_column > div > p > strong";
+    this.paymentMethod = ".bankwire";
+    this.confirmOrderBtnPayment = "#cart_navigation > .button > span";
+    this.orderConfirmationMessage = ".cheque-indent > .dark";
   }
   
   public selectPaymentMethod(): void {
