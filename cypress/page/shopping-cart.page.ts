@@ -2,7 +2,7 @@ class ShoppingCartPage {
   private proceedToCheckoutBtnCart: string
   
   constructor() {
-    this.proceedToCheckoutBtnCart = ".cart_navigation > .button > span";
+    this.proceedToCheckoutBtnCart = ".cart_navigation span";
   }
   
   public continueToCheckoutCart(): void {

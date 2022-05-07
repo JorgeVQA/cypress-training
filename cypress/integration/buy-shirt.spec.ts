@@ -1,11 +1,13 @@
 // /<reference types="cypress" />
-import {MenuContentPage} from "../page/index";
-import {ProductsListPage} from "../page/index";
-import {ShoppingCartPage} from "../page/index";
-import {LoginPage} from "../page/index";
-import {AddressStepPage} from "../page/index";
-import {ShippingStepPage} from "../page/index";
-import {PaymentStepPage} from "../page/index";
+import {
+  MenuContentPage,
+  ProductsListPage,
+  ShoppingCartPage,
+  LoginPage,
+  AddressStepPage,
+  ShippingStepPage,
+  PaymentStepPage
+} from "../page/index";
 
 const menuContentPage = new MenuContentPage();
 const productsListPage = new ProductsListPage();

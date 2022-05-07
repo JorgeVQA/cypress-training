@@ -5,7 +5,7 @@ class PaymentStepPage {
   
   constructor() {
     this.paymentMethod = ".bankwire";
-    this.confirmOrderBtnPayment = "#cart_navigation > .button > span";
+    this.confirmOrderBtnPayment = "#cart_navigation span";
     this.orderConfirmationMessage = ".cheque-indent > .dark";
   }
   

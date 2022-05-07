@@ -4,7 +4,7 @@ class ShippingStepPage {
   
   constructor() {
     this.agreeTermsConditionsCheckbox = "#cgv";
-    this.proceedToCheckoutBtnShipping = "[name=processCarrier]";
+    this.proceedToCheckoutBtnShipping = "button[name=processCarrier]";
   }
   
   public markTermsConditionsInAddress(): void {
