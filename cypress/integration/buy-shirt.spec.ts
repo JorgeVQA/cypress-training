@@ -6,7 +6,7 @@ import {
   LoginPage,
   AddressStepPage,
   ShippingStepPage,
-  PaymentStepPage
+  PaymentStepPage,
 } from "../page/index";
 
 const menuContentPage = new MenuContentPage();
