@@ -19,11 +19,18 @@ describe("the user navigates to the dresses page should", () => {
 
   it("show the available dresses", () => {
     // ... realiza la prueba
-    menuContentPage.visitMenuContentPage(); // Visit Main Page http://automationpractice.com/
 
-    menuContentPage.goToDressesMenu(); // Arrange:   Visit Dresses menu and list all dresses
-    dressesListPage.validateItemsNumber(arrayDressNameList.length); // Act:  Navigate to Dress Menu and validate quantity
-    dressesListPage.validateItemsNames(arrayDressNameList); // Assert: Verify 5 dresses are listed, then then names displayed are the same as expected, (ordered list matters)
+    // Visit Main Page http://automationpractice.com/
+    menuContentPage.visitMenuContentPage();
+
+    // Arrange:   Visit Dresses menu and list all dresses
+    menuContentPage.goToDressesMenu();
+
+    // Act:  Navigate to Dress Menu and validate quantity
+    dressesListPage.validateItemsNumber(arrayDressNameList.length);
+
+    // Assert: Verify 5 dresses are listed, then then names displayed are the same as expected, (ordered list matters)
+    dressesListPage.validateItemsNames(arrayDressNameList);
   });
 });
 
