@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 // /<reference types="cypress" />
 
-=======
->>>>>>> aaf5c9e819f38929d9cab2eb44360c8fd01dcda4
 import { MenuContentPage, DressesListPage } from "../page/index";
 
 describe("the user navigates to the dresses page should", () => {
