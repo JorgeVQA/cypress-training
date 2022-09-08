@@ -1,3 +1,5 @@
+// /<reference types="cypress" />
+
 class LoginPage {
   private loginEmailInput: string
   private loginPasswordInput: string

@@ -1,3 +1,5 @@
+// /<reference types="cypress" />
+
 class PaymentStepPage {
   private paymentMethod: string
   private confirmOrderBtnPayment: string
@@ -18,7 +20,7 @@ class PaymentStepPage {
   }
 
   public verifyOrderConfirmationMsg(validationMsg: string): void {
-    cy.get(this.orderConfirmationMessage).should("have.text", validationMsg)
+    cy.get(this.orderConfirmationMessage).should(`have.text`, validationMsg)
   }
 }
 

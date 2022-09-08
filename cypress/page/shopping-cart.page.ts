@@ -1,3 +1,5 @@
+// /<reference types="cypress" />
+
 class ShoppingCartPage {
   private proceedToCheckoutBtnCart: string
   

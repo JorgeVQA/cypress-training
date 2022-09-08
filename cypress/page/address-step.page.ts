@@ -1,8 +1,10 @@
+// /<reference types="cypress" />
+
 class AddressStepPage {
   private proceedToCheckoutBtnAddressStep: string;
     
   constructor() {
-    this.proceedToCheckoutBtnAddressStep = "button[name=processAddress]";
+    this.proceedToCheckoutBtnAddressStep = `button[name=processAddress]`;
   }
 
   public continueToCheckoutBtnAddress(): void {
