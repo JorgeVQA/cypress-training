@@ -21,6 +21,7 @@ describe("Buy a t-shirt", () => {
   let userName: string;
   let passWord: string;
   let orderConfirmationMsg: string;
+  let prodName: string;
 
   before(() => {
     menuContentPage = new MenuContentPage();
@@ -35,13 +36,14 @@ describe("Buy a t-shirt", () => {
     userName = "aperdomobo@gmail.com";
     passWord = "WorkshopProtractor";
     orderConfirmationMsg = "Your order on My Store is complete.";
+    prodName = "Faded Short Sleeve T-shirts";
   });
 
   it("then the t-shirt should be bought", () => {
     // Step 2. Go to T-Shirt
     menuContentPage.goToTShirtMenu();
     // Step 3. Add to Cart first T-Shirt
-    productsListPage.addProductToCart();
+    productsListPage.addProductToCart(prodName);
     // Step 4. Click on "Proceed to checkout" button on pop-up window
     // (The one with the "Product successfully added..." message)
     productsListPage.continueToCheckoutPopup();
