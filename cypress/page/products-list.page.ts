@@ -3,20 +3,19 @@
 class ProductsListPage {
   private productToAdd: string;
   private proceedToCheckoutBtnPopUp: string
-  private elementHTML: string;
+  private productGroup: string;
   
   constructor() {
     this.productToAdd = ".ajax_add_to_cart_button > span";
     this.proceedToCheckoutBtnPopUp = ".button-container > .button-medium > span";
-    this.elementHTML = ".product-container";
+    this.productGroup = ".product-container";
   }
   
-  findProductByName(prodName: string) {
-    return cy.get(this.elementHTML).filter(`:contains(${prodName})`);
+  private findProductByName(prodName: string) {
+    return cy.get(this.productGroup).filter(`:contains(${prodName})`);
   }
 
   public addProductToCart(prodName: string): void {
-    // cy.get(this.productToAdd).click()
     this.findProductByName(prodName).get(this.productToAdd).click();
   }
 
