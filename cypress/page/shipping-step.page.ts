@@ -1,3 +1,5 @@
+// /<reference types="cypress" />
+
 class ShippingStepPage {
   private agreeTermsConditionsCheckbox: string
   private proceedToCheckoutBtnShipping: string

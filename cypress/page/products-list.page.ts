@@ -1,3 +1,5 @@
+// /<reference types="cypress" />
+
 class ProductsListPage {
   private productToAdd: string;
   private proceedToCheckoutBtnPopUp: string
@@ -9,11 +11,11 @@ class ProductsListPage {
     this.elementHTML = ".product-container";
   }
   
-  private findProductByName(prodName:string) {
-    return cy.get(this.elementHTML).filter(':contains({$prodName})');
+  findProductByName(prodName: string) {
+    return cy.get(this.elementHTML).filter(`:contains(${prodName})`);
   }
 
-  public addProductToCart(prodName:string): void {
+  public addProductToCart(prodName: string): void {
     // cy.get(this.productToAdd).click()
     this.findProductByName(prodName).get(this.productToAdd).click();
   }

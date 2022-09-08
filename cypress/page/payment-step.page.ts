@@ -1,3 +1,5 @@
+// /<reference types="cypress" />
+
 class PaymentStepPage {
   private paymentMethod: string
   private confirmOrderBtnPayment: string

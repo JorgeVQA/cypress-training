@@ -1,3 +1,5 @@
+// /<reference types="cypress" />
+
 class AddressStepPage {
   private proceedToCheckoutBtnAddressStep: string;
     

@@ -1,3 +1,5 @@
+// /<reference types="cypress" />
+
 class DressesListPage {
 
   private dressItem: string;

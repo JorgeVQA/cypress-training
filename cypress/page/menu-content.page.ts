@@ -1,3 +1,5 @@
+// /<reference types="cypress" />
+
 import { StringMatcher } from "cypress/types/net-stubbing";
 
 class MenuContentPage {
