@@ -49,5 +49,8 @@
   },
   "dependencies": {
     "hooks": "^0.3.2"
+  },
+  "[json]": {
+    "files.insertFinalNewline": true
   }
 }
