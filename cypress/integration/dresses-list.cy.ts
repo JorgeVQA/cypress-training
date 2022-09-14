@@ -1,8 +1,8 @@
 // /<reference types="cypress" />
 
 import {
-  MenuContentPage, 
-  DressesListPage
+  MenuContentPage,
+  DressesListPage,
 } from "../page/index";
 
 describe("the user navigates to the dresses page should", () => {

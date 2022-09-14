@@ -1,7 +1,7 @@
 // /<reference types="cypress" />
 
 import {
-  PersonalInputPage
+  PersonalInputPage,
 } from "../page/index";
 
 const personalDataToFill = {
@@ -18,7 +18,7 @@ const personalDataToFill = {
 
 describe("Personal input page", () => {
   let inputPage: PersonalInputPage;
-  
+
   before(() => {
     inputPage = new PersonalInputPage();
     Cypress.on("uncaught:exception", () => false);
