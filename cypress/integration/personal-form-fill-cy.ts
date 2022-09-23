@@ -12,8 +12,8 @@ const personalDataToFill = {
   mobileNumber: "3007805194",
   hobbies: ["Sports", "Reading"],
   address: "Cra 81 32-60",
-  state: "Rajasthan",
-  city: "Jaipur",
+  state: "NCR",
+  city: "Delhi",
 };
 
 describe("Personal input page", () => {
@@ -21,6 +21,7 @@ describe("Personal input page", () => {
 
   before(() => {
     inputPage = new PersonalInputPage();
+    Cypress.on("uncaught:exception", () => false);
     inputPage.openFormPage();
   });
   it("The form is filled and compared with result table", () => {
