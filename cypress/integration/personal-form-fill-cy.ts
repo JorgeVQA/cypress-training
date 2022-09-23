@@ -21,7 +21,6 @@ describe("Personal input page", () => {
 
   before(() => {
     inputPage = new PersonalInputPage();
-    Cypress.on("uncaught:exception", () => false);
     inputPage.openFormPage();
   });
   it("The form is filled and compared with result table", () => {

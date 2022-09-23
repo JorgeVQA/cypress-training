@@ -41,6 +41,7 @@ class PersonalInputPage {
   // 2.  Fill hobbiesList array with all available hobbies
   private enterHobbies(hobbiesList: string[]): void {
     for (let hobbie in hobbiesList) {
+      // cy.check(this.hobbiesField)
       cy.get(this.hobbiesField)
         .contains("label", hobbiesList[hobbie])
         .siblings()
@@ -82,7 +83,8 @@ class PersonalInputPage {
       .click({ force: true })
       .type(`${baseInfo.city}{enter}`);
 
-    cy.get(this.submitFormButton).click({ force: true });
+    //cy.get(this.submitFormButton).click({ force: true });
+    cy.submit();
   }
 
   // 4.  Get Data from Modal for comparing in next step
