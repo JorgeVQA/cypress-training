@@ -1,11 +1,12 @@
 // /<reference types="cypress" />
 
-import { UploadPage,
+import {
+  UploadPage,
 } from "../page/index";
 
 describe("When uploading/downloading files", () => {
   let uploadPage: UploadPage;
-  const fileName = `uploadFileTest.txt`;
+  const fileName = "uploadFileTest.txt";
 
   before("Open upload Site", () => {
     uploadPage = new UploadPage();
