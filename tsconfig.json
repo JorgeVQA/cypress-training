@@ -12,7 +12,8 @@
             "cypress",
             "node",
             "mocha",
-            "jest"
+            "jest",
+            "cypress-file-upload"
         ]
     },
     "include": [

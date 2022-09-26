@@ -12,8 +12,8 @@ const personalDataToFill = {
   mobileNumber: "3007805194",
   hobbies: ["Sports", "Reading"],
   address: "Cra 81 32-60",
-  state: "Rajasthan",
-  city: "Jaipur",
+  state: "NCR",
+  city: "Delhi",
 };
 
 describe("Personal input page", () => {

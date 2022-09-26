@@ -27,8 +27,8 @@ class PersonalInputPage {
     this.subjectsField = "#subjectsContainer";
     this.addressField = "textarea#currentAddress";
     this.hobbiesField = "div.custom-checkbox";
-    this.stateField = "Select State";
-    this.cityField = "Select City";
+    this.stateField = "#state input";
+    this.cityField = "#city input";
     this.submitFormButton = "#submit";
     this.modalInfo = ".table > tbody > tr";
   }
@@ -74,16 +74,21 @@ class PersonalInputPage {
 
     cy.get(this.addressField).type(baseInfo.address);
 
-    cy.contains(this.stateField)
-      .click({ force: true })
-      .type(`${baseInfo.state}{enter}`);
+    cy.get(this.stateField).type(baseInfo.state, { force: true }).type("{enter}");
 
-    cy.contains(this.cityField)
-      .click({ force: true })
-      .type(`${baseInfo.city}{enter}`);
+    cy.get(this.cityField).type(baseInfo.city, { force: true }).type("{enter}");
 
-    cy.get(this.submitFormButton).click({ force: true });
+    cy.get(this.submitFormButton).type("{enter}", { force: true });
   }
+//    cy.contains(this.stateField)
+//      .click({ force: true })
+//      .type(`${baseInfo.state}{enter}`);
+
+//    cy.contains(this.cityField)
+//      .click({ force: true })
+//      .type(`${baseInfo.city}{enter}`);
+
+//    cy.get(this.submitFormButton).click({force: true});
 
   // 4.  Get Data from Modal for comparing in next step
   private getDataFromModal(infoToCheck: string) {
